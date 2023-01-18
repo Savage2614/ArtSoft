@@ -1,14 +1,16 @@
-const menuBtn = document.querySelector('.menu-icon');
-const menu = document.querySelector('.menu__body');
+const menuBtns = document.getElementsByClassName('menu-icon');
+const menus = document.getElementsByClassName('menu__body');
 const body = document.body
 
-if (menuBtn && menu) {
-	menuBtn.addEventListener('click', () => {
-		menu.classList.toggle('active')
-		menuBtn.classList.toggle('active')
-		body.classList.toggle('lock')
-
-	})
+if (menuBtns && menus) {
+	for (let i = 0; i < menuBtns.length; i++ ){
+		menuBtns[i].addEventListener('click', () => {
+			menus[i].classList.toggle('active')
+			menuBtns[i].classList.toggle('active')
+			body.classList.toggle('lock')
+			
+		})
+	}
 }
 
 const menu_Btn = document.querySelector('.menuIcon');

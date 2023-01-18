@@ -14,6 +14,10 @@ body{
     justify-content: space-between;
     padding: 50px ;
 }
+.header__menu{
+  display: flex;
+  align-items: center;
+}
 
 .menu {
     display: flex;
@@ -133,79 +137,7 @@ body{
   .secondWindow{
     height: 100vh;
   }
-  .Menu{
-    display: flex;
-    align-items: center;
-  }
-  .menuIcon {
-    display: block;
-    height: 25px;
-    width: 30px;
-    position: relative;
-    cursor: pointer;
-    z-index: 5;
-  }
-  .menuIcon span {
-    transition: all 0.1s ease 0s;
-    top: calc(50% - 1px);
-    left: 0;
-    position: absolute;
-    width: 100%;
-    background-color: #01003Dff;
-    height: 2px;
-  }
-  .menuIcon span:first-child {
-    top: 0;
-    width: 24px;
-    height: 2px;
-  }
-  .menuIcon span:last-child {
-    top: auto;
-    bottom: 0;
-    width: 24px;
-    height: 2px;
-  }
-  .menuIcon.active span {
-    transform: scale(0);
-  }
-  .menuIcon.active span:first-child {
-    transform: rotate(-45deg);
-    top: calc(50% - 1px);
-  }
-  .menuIcon.active span:last-child {
-    transform: rotate(45deg);
-    bottom: calc(50% - 1px);
-  }
-  .menuBody {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    opacity: 0;
-    right: 50px;
-    visibility: hidden;
-    transition: all 0.3s ease;
-  }
-  .menuBody.active {
-    right: 100px;
-    opacity: 1;
-    visibility: visible;
-  }
-  .menuList {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-  }
-  .menuLink {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 2.2;
-    color: #1E2E53;
-    text-decoration: none;
-  }
-  .menuLink:hover {
-    text-decoration: underline;
-  }
+  
   .backgroundText{
     margin: 0;
     position: absolute;
@@ -277,76 +209,5 @@ body{
     height: 100vh;
     background-size: cover;
   }
-  .Menu1{
-    display: flex;
-    align-items: center;
-  }
-  .menu__Icon {
-    display: block;
-    height: 25px;
-    width: 30px;
-    position: relative;
-    cursor: pointer;
-    z-index: 5;
-  }
-  .menu__Icon span {
-    transition: all 0.1s ease 0s;
-    top: calc(50% - 1px);
-    left: 0;
-    position: absolute;
-    width: 100%;
-    background-color: #fff;
-    height: 2px;
-  }
-  .menu__Icon span:first-child {
-    top: 0;
-    width: 24px;
-    height: 2px;
-  }
-  .menu__Icon span:last-child {
-    top: auto;
-    bottom: 0;
-    width: 24px;
-    height: 2px;
-  }
-  .menu__Icon.active span {
-    transform: scale(0);
-  }
-  .menu__Icon.active span:first-child {
-    transform: rotate(-45deg);
-    top: calc(50% - 1px);
-  }
-  .menu__Icon.active span:last-child {
-    transform: rotate(45deg);
-    bottom: calc(50% - 1px);
-  }
-  .menu__Body {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    opacity: 0;
-    right: 50px;
-    visibility: hidden;
-    transition: all 0.3s ease;
-  }
-  .menu__Body.active {
-    right: 100px;
-    opacity: 1;
-    visibility: visible;
-  }
-  .menu__List {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-  }
-  .menu__Link {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 2.2;
-    color: #fff;
-    text-decoration: none;
-  }
-  .menu__Link:hover {
-    text-decoration: underline;
-  }
+  
+  
