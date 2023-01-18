@@ -1,0 +1,279 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* First Window Zone */
+.firstWindow{
+    background-image: url(../img/3d-space-scene1.png);
+    height: 100vh;
+    background-size: cover;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px ;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu-icon {
+    display: block;
+    height: 25px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .menu-icon span {
+    transition: all 0.1s ease 0s;
+    top: calc(50% - 1px);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    height: 2px;
+  }
+  .menu-icon span:first-child {
+    top: 0;
+    width: 24px;
+    height: 2px;
+  }
+  .menu-icon span:last-child {
+    top: auto;
+    bottom: 0;
+    width: 24px;
+    height: 2px;
+  }
+  .menu-icon.active span {
+    transform: scale(0);
+  }
+  .menu-icon.active span:first-child {
+    transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .menu-icon.active span:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+  .menu__body {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    opacity: 0;
+    right: 50px;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  .menu__body.active {
+    right: 100px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu__list {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  .menu__link {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 2.2;
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu__link:hover {
+    text-decoration: underline;
+  }
+  .firstTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+  }
+  .firstTitle h1{
+    letter-spacing: 5px;
+    line-height: 34px;
+    font-size: 68px;
+    font-weight: 800;
+    margin-top: 130px;
+    margin-bottom: 0;
+  }
+  .firstTitle p{
+    font-size: 28px;
+  }
+
+  .buttonSection p{
+    margin-top: 120px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .firstWindowButtons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+  }
+  .firstWindowButtons button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: 200px;
+    height: 40px;
+    border-radius: 150px;
+    border: 0;
+  }
+  .firstWindowButtons button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  /* Second Widnow Zone */
+  .secondWindow{
+    height: 100vh;
+  }
+  .Menu{
+    display: flex;
+    align-items: center;
+  }
+  .menuIcon {
+    display: block;
+    height: 25px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .menuIcon span {
+    transition: all 0.1s ease 0s;
+    top: calc(50% - 1px);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #01003Dff;
+    height: 2px;
+  }
+  .menuIcon span:first-child {
+    top: 0;
+    width: 24px;
+    height: 2px;
+  }
+  .menuIcon span:last-child {
+    top: auto;
+    bottom: 0;
+    width: 24px;
+    height: 2px;
+  }
+  .menuIcon.active span {
+    transform: scale(0);
+  }
+  .menuIcon.active span:first-child {
+    transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .menuIcon.active span:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+  .menuBody {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    opacity: 0;
+    right: 50px;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  .menuBody.active {
+    right: 100px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .menuList {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  .menuLink {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 2.2;
+    color: #1E2E53;
+    text-decoration: none;
+  }
+  .menuLink:hover {
+    text-decoration: underline;
+  }
+  .backgroundText{
+    margin: 0;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+  }
+  .backgroundText p{
+    margin: 0;
+    z-index: 0;
+    font-size: 210px;
+    font-weight: 900;
+    color: rgba(1, 0, 61, 0.06);;
+  }
+  .content{
+    width: 77%;
+    margin: 0 auto;
+  }
+  .content h2{
+    color: #01003D;
+    margin-top: 20px;
+    font-size: 58px;
+    font-weight: 600;
+  }
+  .content p{
+    color: #01003D;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .header.secondHeader{
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .unknownBlock{
+    display: flex;
+    justify-content: space-between;
+  }
+  .unknownBlock span{
+    z-index: 1;
+    display: block;
+    width: 350px;
+    height: 240px;
+    background-color: #C4C4C4;
+    opacity: 1;
+  }
+  .benefitsPicktures{
+    display: flex;
+    justify-content: space-between;
+  }
+  .benefitsItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #01003D;
+    text-align: center;
+  }
+  .benefitsItems p{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  /* Third Window Zone */
+  .thirdWindow{
+    background-image: url(../img/fon-2.png);
+    height: 100vh;
+    background-size: cover;
+  }
