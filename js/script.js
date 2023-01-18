@@ -21,3 +21,14 @@ if (menu_Btn && Menu) {
 
 	})
 }
+const menu__Btn = document.querySelector('.menu__Icon');
+const Menu1 = document.querySelector('.menu__Body');
+
+if (menu__Btn && Menu1) {
+	menu__Btn.addEventListener('click', () => {
+		Menu1.classList.toggle('active')
+		menu__Btn.classList.toggle('active')
+
+	})
+}
+
