@@ -1,13 +1,14 @@
 body{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 /* First Window Zone */
 .firstWindow{
     background-image: url(../img/3d-space-scene1.png);
     height: 100vh;
     background-size: cover;
+    background-attachment: fixed;
 }
 .header{
     display: flex;
@@ -144,19 +145,19 @@ body{
     top: 150%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
-    
+    transform: translate(-50%, -50%) 
   }
   .backgroundText p{
     margin: 0;
-    z-index: 0;
-    font-size: 210px;
+    z-index: 1 ;
+    font-size: 200px;
     font-weight: 900;
     color: rgba(1, 0, 61, 0.06);;
   }
   .content{
     width: 77%;
     margin: 0 auto;
+    z-index: 2;
   }
   .content h2{
     color: #01003D;
@@ -202,12 +203,129 @@ body{
     font-size: 20px;
     font-weight: 500;
   }
+  .benefitsHeader{
+    padding-top: 50px;
+  }
 
   /* Third Window Zone */
   .thirdWindow{
     background-image: url(../img/fon-2.png);
     height: 100vh;
     background-size: cover;
+    background-attachment: fixed;
   }
   
-  
+  /*  Large desktops and laptops */
+  @media (min-width: 1200px) and (max-width: 1360px) {
+    .firstWindow{
+    background-position: center center;
+  }
+  .thirdWindow{
+    background-position: center center; 
+  }
+   .backgroundText p{
+    font-size: 130px;
+   }
+   .content{
+    width: 90%;
+   }
+   .unknownBlock span img {
+    width: 270px;
+    height: 210px;
+   }
+   .unknownBlock span {
+    width: 230px;
+    height: 150px;
+   }
+   .content h2 {
+    margin-top: 0;
+    font-size: 38px;
+   }
+   .content p {
+    margin-bottom: 55px;
+    font-size: 15px;
+   }
+   .benefitsHeader{
+    padding-top: 160px;
+  }
+  }
+
+  /* Portrait tablets and medium desktops  */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .firstWindow{
+    background-position: center center;
+  }
+  .thirdWindow{
+    background-position: center center; 
+  }
+    .backgroundText p{
+      font-size: 110px;
+     }
+     .content{
+      width: 90%;
+     }
+     .unknownBlock span img {
+      width: 220px;
+      height: 200px;
+     }
+     .unknownBlock span {
+      width: 200px;
+      height: 140px;
+     }
+     .content h2 {
+      margin-top: 0;
+      font-size: 38px;
+     }
+     .content p {
+      margin-bottom: 55px;
+      font-size: 15px;
+     }
+     .benefitsHeader{
+      padding-top: 160px;
+    }
+  }
+
+  /* Portrait tablets and small desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .firstWindow{
+    background-position: center center;
+  }
+  .thirdWindow{
+    background-position: center center; 
+  }
+    .backgroundText p{
+      font-size: 110px;
+      display: flex;
+      text-align: center;
+     }
+     .content{
+      width: 90%;
+     }
+     .unknownBlock{
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 300px;
+      align-items: center;
+      justify-content: space-evenly;
+     }
+     .unknownBlock span img {
+      width: 235px;
+      height: 135px;
+     }
+     .unknownBlock span {
+      width: 235px;
+      height: 135px;
+      display: flex;
+     }
+     .content h2 {
+      margin-top: 0;
+      font-size: 28px;
+     }
+     .content p {
+      margin-bottom: 45px;
+      font-size: 15px;
+     }
+     .benefitsHeader{
+      padding-top: 40px;
+    }
+  }
