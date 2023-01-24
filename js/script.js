@@ -13,3 +13,7 @@ if (menuBtns && menus) {
 	}
 }
 
+$(document).ready(function(){
+	$('.slider').slick();
+})
+
