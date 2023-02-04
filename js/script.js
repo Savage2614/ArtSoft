@@ -14,6 +14,22 @@ if (menuBtns && menus) {
 }
 
 $(document).ready(function(){
-	$('.slider').slick();
+	$('.slider').slick({
+		slidesToShow: 1,
+		arrows: false,
+		lazyLoad: 'ondemand',
+		asNavFor: '.sliderTitle'
+	});
+	$('.sliderTitle').slick({
+		infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+		centerMode: true,
+  		centerPadding: '60px',
+		asNavFor: '.slider',
+		arrows: false,
+		focusOnSelect: true,
+		lazyLoad: 'ondemand',
+	});
 })
 

@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- FIRST WINDOW -->
-<div class="firstWindow">
+<div class="firstWindow" id="mainMenu">
     <div class="header">
         <img src="img/logo1.png" alt="Oops!" class="firstLogo">
         <div class="header__menu">
@@ -23,10 +23,10 @@
           </div>
           <nav class="menu__body">
             <ul class="menu__list">
-              <li class="menu__item"><a href="" class="menu__link link">Главная</a></li>
-              <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Обратная связь</a></li>
+              <li class="menu__item"><a href="#" class="menu__link link">Главная</a></li>
+              <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+              <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+              <li class="menu__item"><a href="#footer" class="menu__link">Обратная связь</a></li>
             </ul>
           </nav>
         </div>
@@ -44,7 +44,7 @@
     </div>
 </div>
 <!-- SECOND WINDOW -->
-<div class="secondWindow">
+<div class="secondWindow" id="about">
   <div class="header secondHeader">
     <img src="img/logo2.png" alt="Oops!" class="firstLogo">
     <div class="header__menu">
@@ -55,10 +55,10 @@
       </div>
       <nav class="menu__body">
         <ul class="menu__list">
-          <li class="menu__item"><a href="" class="menu__link" style="color: #01003D;">Главная</a></li>
-          <li class="menu__item"><a href="" class="menu__link" style="color: #01003D;">О нас</a></li>
-          <li class="menu__item"><a href="" class="menu__link" style="color: #01003D;">Услуги</a></li>
-          <li class="menu__item"><a href="" class="menu__link" style="color: #01003D;">Обратная связь</a></li>
+          <li class="menu__item"><a href="#mainMenu" class="menu__link" style="color: #01003D;">Главная</a></li>
+          <li class="menu__item"><a href="#" class="menu__link" style="color: #01003D;">О нас</a></li>
+          <li class="menu__item"><a href="#services" class="menu__link" style="color: #01003D;">Услуги</a></li>
+          <li class="menu__item"><a href="#footer" class="menu__link" style="color: #01003D;">Обратная связь</a></li>
         </ul>
       </nav>
     </div>
@@ -84,7 +84,7 @@
   <div class="backgroundText"><p>ART SOFTWARE</p></div>
 </div>
 <!-- THIRD WINDOW -->
-<div class="thirdWindow">
+<div class="thirdWindow" id="services">
   <div class="header">
     <img src="img/logo1.png" alt="Oops!" class="firstLogo">
     <div class="header__menu">
@@ -95,38 +95,229 @@
       </div>
       <nav class="menu__body">
         <ul class="menu__list">
-          <li class="menu__item"><a href="" class="menu__link link">Главная</a></li>
-          <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Обратная связь</a></li>
+          <li class="menu__item"><a href="#mainMenu" class="menu__link link">Главная</a></li>
+          <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+          <li class="menu__item"><a href="#footer" class="menu__link">Обратная связь</a></li>
         </ul>
       </nav>
     </div>
 </div>
+<h2 style="color: #fff; font-size: 48px; margin: 0 0 0 250px; font-weight: 600; ">Услуги</h2>
+<div class="sliderTitle">
+  <div class="sliderTitle__item">
+    <p>Лендинг</p>
+  </div>
+  <div class="sliderTitle__item">
+    <p>Техническая поддержка</p>
+  </div>
+  <div class="sliderTitle__item">
+    <p>Продвижение сайта</p>
+  </div>
+  <div class="sliderTitle__item">
+    <p>Сайт-визитка</p>
+  </div>
+  <div class="sliderTitle__item">
+    <p>Корпоративный сайт</p>
+  </div>
+  <div class="sliderTitle__item">
+    <p>Интернет-магазин</p>
+  </div>
+</div>
   <div class="slider">
-    <div class="slider__item">
-      <p>Лендинг</p>
+    <div class="slider__item" style="display: flex;">
+      <div class="slides">
+        <img src="img/landing.png" alt="">
+        <div class="landingText">
+          <p>Лендинг (landing page) - небольшой одностраничный сайт, полностью заточенный под то, чтобы попадающий на него клиент выполнил целевое действие.</p>
+          <p class="secondLines">
+            Лендинг включает в себя следующие модули:
+            <br>
+            - одностраничный макет;
+            <br>
+            - дизайн логотипа;
+            <br>
+            - первичное заполнение;
+            <br>
+            - форма обратного звонка;
+            <br>
+            - форма заявки;
+            <br>
+            - мобильная версия сайта;
+            <br>
+            - система работы с сайтом.</p>
+          </div>
+      </div>
     </div>
-    <div class="slider__item">   
-      <p>Сайт-визитка</p>
-    </div>
+
     <div class="slider__item">
-      <p>Корпоративный сайт</p>
+      <div class="slides">
+        <img src="img/landing.png" alt="">
+        <div class="landingText">
+          <p>Лендинг (landing page) - небольшой одностраничный сайт, полностью заточенный под то, чтобы попадающий на него клиент выполнил целевое действие.</p>
+          <p class="secondLines">
+            Лендинг включает в себя следующие модули:
+            <br>
+            - одностраничный макет;
+            <br>
+            - дизайн логотипа;
+            <br>
+            - первичное заполнение;
+            <br>
+            - форма обратного звонка;
+            <br>
+            - форма заявки;
+            <br>
+            - мобильная версия сайта;
+            <br>
+            - система работы с сайтом.</p>
+          </div>
+      </div>
     </div>
+
     <div class="slider__item">
-      <p>Интернет магазин</p>
+      <div class="slides">
+        <img src="img/landing.png" alt="">
+        <div class="landingText">
+          <p>Лендинг (landing page) - небольшой одностраничный сайт, полностью заточенный под то, чтобы попадающий на него клиент выполнил целевое действие.</p>
+          <p class="secondLines">
+            Лендинг включает в себя следующие модули:
+            <br>
+            - одностраничный макет;
+            <br>
+            - дизайн логотипа;
+            <br>
+            - первичное заполнение;
+            <br>
+            - форма обратного звонка;
+            <br>
+            - форма заявки;
+            <br>
+            - мобильная версия сайта;
+            <br>
+            - система работы с сайтом.</p>
+          </div>
+      </div>
     </div>
+
     <div class="slider__item">
-      <p>Техническая поддержка сайта</p>
+      <div class="slides">
+        <img src="img/landing.png" alt="">
+        <div class="landingText">
+          <p>Лендинг (landing page) - небольшой одностраничный сайт, полностью заточенный под то, чтобы попадающий на него клиент выполнил целевое действие.</p>
+          <p class="secondLines">
+            Лендинг включает в себя следующие модули:
+            <br>
+            - одностраничный макет;
+            <br>
+            - дизайн логотипа;
+            <br>
+            - первичное заполнение;
+            <br>
+            - форма обратного звонка;
+            <br>
+            - форма заявки;
+            <br>
+            - мобильная версия сайта;
+            <br>
+            - система работы с сайтом.</p>
+          </div>
+      </div>
     </div>
+
     <div class="slider__item">
-      <p>Продвижение сайта</p>
+      <div class="slides">
+        <img src="img/landing.png" alt="">
+        <div class="landingText">
+          <p>Лендинг (landing page) - небольшой одностраничный сайт, полностью заточенный под то, чтобы попадающий на него клиент выполнил целевое действие.</p>
+          <p class="secondLines">
+            Лендинг включает в себя следующие модули:
+            <br>
+            - одностраничный макет;
+            <br>
+            - дизайн логотипа;
+            <br>
+            - первичное заполнение;
+            <br>
+            - форма обратного звонка;
+            <br>
+            - форма заявки;
+            <br>
+            - мобильная версия сайта;
+            <br>
+            - система работы с сайтом.</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="slider__item">
+      <div class="slides">
+        <img src="img/landing.png" alt="">
+        <div class="landingText">
+          <p>Лендинг (landing page) - небольшой одностраничный сайт, полностью заточенный под то, чтобы попадающий на него клиент выполнил целевое действие.</p>
+          <p class="secondLines">
+            Лендинг включает в себя следующие модули:
+            <br>
+            - одностраничный макет;
+            <br>
+            - дизайн логотипа;
+            <br>
+            - первичное заполнение;
+            <br>
+            - форма обратного звонка;
+            <br>
+            - форма заявки;
+            <br>
+            - мобильная версия сайта;
+            <br>
+            - система работы с сайтом.</p>
+          </div>
+      </div>
     </div>
   </div>
 </div>
-<script src="js/script.js"></script>
+<footer id="footer">
+  <div class="footerInner">
+    <a href="">Главная</a>
+    <a href="">О нас</a>
+    <a href="">Услуги</a>
+    <a href="#">Обратная связь</a>
+  </div>
+  <div class="footerAbout">
+    <h3 style="margin-top: 13px;">Телефон</h3>
+    <a href="tel:7 (812) 200-97-96">7 (812) 200-97-96</a>
+    <br>
+    <h3>E-mail</h3>
+    <a href="mailto:artsoftware2020@gmail.com">artsoftware2020@gmail.com</a>
+    <h3>Наш адрес</h3>
+    <a href="https://goo.gl/maps/WzSrSfdQwLYpUrv28">г. Кызылорда, Левый берег, 15А</a>
+    <div class="linkImages">
+      <a href=""><img src="img/telegram.svg" alt=""></a>
+      <a href=""><img src="img/facebook.svg" alt=""></a>
+      <a href=""><img src="img/whatsapp.svg" alt=""></a>
+      <a href=""><img src="img/inst.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="footerForm">
+    <h2>Обратная связь</h2>
+    <div class="formGroup">
+      <input class="formField" type="text" placeholder="Ваше имя">
+      <input class="formField" type="tel" placeholder="Номер телефона">
+      <input class="formField" type="email" placeholder="Электронная почта">
+      <div class="disciptAndBut">
+        <input class="formField" type="text" placeholder="Коротко опишите проект..." style="width: 438px;">
+        <input class="submitButton" type="submit" value="Отправить заявку">   
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="protection">
+  <p>&copy Art Software 2020</p>
+  <p>Все права защищены</p>
+</div>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="slick_slider/slick.min.js"></script>
 <script src="slick_slider/slick.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
