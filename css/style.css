@@ -11,9 +11,12 @@ body{
     background-attachment: fixed;
 }
 .header{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 50px ;
+    z-index: 100;
 }
 .header__menu{
   display: flex;
@@ -243,6 +246,12 @@ body{
     height: 450px;
     width: 1000px;
   }
+  .servhead{
+    margin: 0 0 0 250px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+  }
   .secondLines{
     line-height: 47px;
   }
@@ -356,8 +365,11 @@ body{
     outline: 0;
     outline-offset: 0;
   }
-  .disciptAndBut{
+  .discriptAndBut{
     display: flex;
+  }
+  .discriptAndBut .formField{
+    width: 438px;
   }
   .protection{
     text-align: center;
@@ -400,9 +412,31 @@ body{
      .benefitsHeader{
       padding-top: 160px;
     }
+    footer{
+      grid-template-columns: 200px 250px 702px;
+      padding-left: 50px;
+    }
+    .slides{
+      width: 1290px;
+      height: 450px;
+    }
+    .slides img{
+      width: 301px;
+      height: 370px;
+    }
+    .sliderTitle__item p{
+      margin-top: 25px;
+    }
+    .secondLines{
+      line-height: 40px;
+    }
+    .slick-current{
+      font-weight: 500;
+      font-size: 30px;
+    }
     }
   
-  @media (min-width: 1239px) and (max-width: 1369px) {
+  @media (min-width: 1239px) and (max-width: 1367px) {
     .firstWindow{
     background-position: center center;
   }
@@ -437,6 +471,39 @@ body{
    .benefitsHeader{
     padding-top: 100px;
   }
+  .benefitsItems img{
+    width: 75px;
+    height: 75px;
+  }
+  footer{
+    grid-template-columns: 200px 250px 702px;
+    padding-left: 50px;
+  }
+  .slides{
+    width: 1000px;
+    height: 420px;
+  }
+  .slides img{
+    width: 270px;
+    height: 336px;
+  }
+  .sliderTitle__item p{
+    margin-top: 25px;
+  }
+  .secondLines{
+    line-height: 33px;
+  }
+  .slick-current{
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .discriptAndBut{
+    flex-direction: column;
+  }
+  .landingText{
+    margin-top: 25px;
+    margin-left: 35px;
+  }
   }
   @media (min-width: 1200px) and (max-width: 1240px){
     .firstWindow{
@@ -463,16 +530,45 @@ body{
       height: 150px;
      }
      .content h2 {
-      margin-top: 60px;
+      margin-top: 0;
       font-size: 38px;
      }
      .content p {
       margin-bottom: 35px;
-      font-size: 25px;
+      font-size: 18px;
       margin-top: 30px;
      }
      .benefitsHeader{
       padding-top: 100px;
+    }
+    footer{
+      grid-template-columns: 200px 250px 702px;
+      padding-left: 50px;
+    }
+    .slides{
+      width: 1000px;
+      height: 420px;
+    }
+    .slides img{
+      width: 270px;
+      height: 336px;
+    }
+    .sliderTitle__item p{
+      margin-top: 15px;
+    }
+    .secondLines{
+      line-height: 33px;
+    }
+    .slick-current{
+      font-weight: 500;
+      font-size: 25px;
+    }
+    .discriptAndBut{
+      flex-direction: column;
+    }
+    .landingText{
+      margin-top: 25px;
+      margin-left: 35px;
     }
   }
   /* Portrait tablets and medium desktops  */
@@ -499,14 +595,73 @@ body{
      }
      .content h2 {
       margin-top: 15px;
-      font-size: 38px;
+      font-size: 30px;
      }
      .content p {
-      margin-bottom: 75px;
-      font-size: 25px;
+      margin-bottom: 15px;
+      font-size: 20px;
      }
      .benefitsHeader{
-      padding-top: 160px;
+      padding-top: 100px;
+    }
+    .benefitsItems img{
+      width: 75px;
+      height: 75px;
+    }
+    footer{
+      grid-template-columns: 200px 250px 488px;
+      padding-left: 50px;
+    }
+    .slides{
+      width: 755px;
+      height: 420px;
+    }
+    .slides img{
+      width: 270px;
+      height: 336px;
+    }
+    .sliderTitle__item p{
+      margin-top: 15px;
+    }
+    .secondLines{
+      line-height: 33px;
+    }
+    .slick-current{
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .discriptAndBut{
+      flex-direction: column;
+    }
+    .landingText{
+      margin-top: 25px;
+      margin-left: 35px;
+      font-size: 16px;
+    }
+    .servhead{
+      margin: 0 0 0 150px;
+      font-size: 40px;
+    }
+    .footerInner{
+      font-size: 18px;
+    }
+    .footerAbout{
+      font-size: 18px;
+      margin-left: 0;
+    }
+    .footerForm{
+      margin-left: 45px;
+    }
+    .formField{
+      margin-top: 30px;
+      margin-right: 8px;
+      width: 180px;
+    }
+    .discriptAndBut .formField{
+      width: 370px;
+    }
+    form{
+      width: 500px;
     }
   }
 
@@ -552,6 +707,65 @@ body{
      }
      .benefitsHeader{
       padding-top: 40px;
+    }
+    .benefitsItems img{
+      width: 75px;
+      height: 75px;
+    }
+    footer{
+      grid-template-columns: 200px 250px 425px;
+      padding-left: 50px;
+    }
+    .slides{
+      width: 755px;
+      height: 420px;
+    }
+    .slides img{
+      width: 270px;
+      height: 336px;
+    }
+    .sliderTitle__item p{
+      margin-top: 15px;
+    }
+    .secondLines{
+      line-height: 33px;
+    }
+    .slick-current{
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .discriptAndBut{
+      flex-direction: column;
+    }
+    .landingText{
+      margin-top: 25px;
+      margin-left: 35px;
+      font-size: 16px;
+    }
+    .servhead{
+      margin: 0 0 0 150px;
+      font-size: 40px;
+    }
+    .footerInner{
+      font-size: 18px;
+    }
+    .footerAbout{
+      font-size: 18px;
+      margin-left: 0;
+    }
+    .footerForm{
+      margin-left: 45px;
+    }
+    .formField{
+      margin-top: 30px;
+      margin-right: 8px;
+      width: 180px;
+    }
+    .discriptAndBut .formField{
+      width: 370px;
+    }
+    form{
+      width: 500px;
     }
   }
 

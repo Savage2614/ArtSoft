@@ -1,6 +1,9 @@
 const menuBtns = document.getElementsByClassName('menu-icon');
 const menus = document.getElementsByClassName('menu__body');
 const body = document.body
+const firstHeader = document.querySelector('.firstHeader')
+const secondHeader = document.querySelector('.secondHeader')
+const thirdHeader = document.querySelector('.thirdHeader')
 
 if (menuBtns && menus) {
 	for (let i = 0; i < menuBtns.length; i++ ){
